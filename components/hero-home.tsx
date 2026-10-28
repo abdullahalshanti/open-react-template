@@ -23,7 +23,8 @@ export default function HeroHome() {
               data-aos="fade-up"
               data-aos-delay={100}
             >
-              DigitalAbed LLC – Borderless Digital Solutions
+                   DigitalAbed LLC 
+              Borderless Digital Solutions
             </h1>
 
             {/* 3. الوصف الفرعي (Paragraph) */}
