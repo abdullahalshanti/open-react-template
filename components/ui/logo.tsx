@@ -1,11 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/images/logo.svg";
+import LogoImg from "@/public/images/logo.png";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex shrink-0" aria-label="Cruip">
-      <Image src={logo} alt="Cruip Logo" width={32} height={32} />
+    <Link href="/" className="inline-flex items-center" aria-label="DigitalAbed">
+      <Image 
+        src={LogoImg} 
+        alt="DigitalAbed LLC Logo" 
+        width={150} 
+        height={40} 
+        priority 
+        className="max-h-9 w-auto object-contain brightness-100 invert"
+      />
     </Link>
   );
 }
