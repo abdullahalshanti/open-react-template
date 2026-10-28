@@ -1,66 +1,39 @@
-import VideoThumb from "@/public/images/hero-image-01.jpg";
-import ModalVideo from "@/components/modal-video";
-
 export default function HeroHome() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
-        <div className="py-12 md:py-20">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="pb-12 text-center md:pb-20">
-            <h1
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
-              data-aos="fade-up"
-            >
-              AI-driven tools for product teams
+          <div className="text-center pb-12 md:pb-16">
+            <div className="inline-flex mb-4 relative before:absolute before:inset-0 before:bg-green-500/20 before:rounded-full before:blur-md">
+              <span className="text-xs font-semibold tracking-wider text-green-400 uppercase bg-slate-800/80 px-3 py-1 rounded-full border border-green-500/30">
+                Officially Registered US Digital Agency
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 text-slate-100" data-aos="zoom-y-out">
+              DigitalAbed LLC <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-slate-200 to-red-500">_ Borderless Digital Solutions</span>
             </h1>
-            <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-xl text-indigo-200/65"
-                data-aos="fade-up"
-                data-aos-delay={200}
-              >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+            <div className="max-w-3xl mx-auto">
+              <p className="text-xl text-slate-400 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
+                A global innovation and UI/UX design agency rooted in a resilient vision. As a registered United States entity, we seamlessly serve global clients through our strategic presence across the US, Netherlands, Ireland, and Germany.
               </p>
-              <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-                <div data-aos="fade-up" data-aos-delay={400}>
-                  <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Start Building
-                      <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
-                    </span>
+              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
+                <div>
+                  <a className="btn text-white bg-green-600 hover:bg-green-700 w-full mb-4 sm:w-auto sm:mb-0" href="#services">
+                    Explore Solutions
                   </a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay={600}>
-                  <a
-                    className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Schedule Demo
+                <div>
+                  <a className="btn text-white bg-slate-700 hover:bg-slate-800 w-full sm:w-auto sm:ml-4" href="#branches">
+                    Our Global Presence
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1104}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="videos//video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          />
         </div>
       </div>
     </section>
-  );
+  )
 }
